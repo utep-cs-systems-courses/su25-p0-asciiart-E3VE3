@@ -23,7 +23,7 @@ void print_triangle(int leftCol, int size)
     for (col = 0; col < minCol; col++) putchar(' ');
     for (       ; col <= maxCol; col++) putchar('*');
     putchar('\n');
-  }
+  }}
   
   //Prints an arrow
   void print_arrow(int leftCol, int size){
@@ -38,9 +38,8 @@ void print_triangle(int leftCol, int size)
     int centerColumn = leftCol + size;
 
     for(int i = 0; i < shaftHeight; i++){
-      for(int col = 0; col < ceterCol; col++){
-	putchar(' ');
-      }
+      for(int col = 0; col < centerColumn; col++) putchar(' ');
       putchar('*');
       putchar('\n');
-    }}}
+    }
+  }

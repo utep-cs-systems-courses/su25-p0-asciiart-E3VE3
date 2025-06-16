@@ -24,6 +24,12 @@ int main()
       puts("You selected square:");
       print_square(5, 5);
       break;
+      
+    case'a':
+      puts("You selected arrow:");
+      print_arrow(5, 7);
+      break;
+      
     case 'c':
       puts("You selected chars:");
       for (char c = 'a'; c < 'd'; c++)
